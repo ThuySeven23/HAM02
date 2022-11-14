@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.</title>
+</head>
+<body>
+
+</body>
+<script>
+    function swap(a,b) {
+        temp = a;
+        a = b;
+        b = temp;
+        document.write("luc sau: " + " a = " + a + " , b = " + b);
+    }
+
+    let a = +prompt();
+    let b = +prompt();
+    document.write("ban dau: " + " a = " + a + " , b = " + b + "<br>");
+    swap(a,b);
+</script>
+</html>

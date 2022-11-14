@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm tính diện tích, hàm tính chu vi hình tròn.</title>
+</head>
+<body>
+    Diện tích hình tròn : <span id="circle"></span>
+    <br>
+    Chu vi hình tròn : <span id="diameter"></span>
+</body>
+<script>
+    function circle_area(r) {
+        return r*r*3.14;
+    }
+    function diameter_of_circle(r) {
+        return 2*r*3.14;
+    }
+
+    let r = +prompt("Input radius: ");
+    document.getElementById("circle").innerHTML = circle_area(r);
+    document.getElementById("diameter").innerHTML =  diameter_of_circle(r);
+</script>
+</html>

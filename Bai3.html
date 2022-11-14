@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào</title>
+</head>
+<body>
+
+</body>
+<script>
+    function factorial(number) {
+        n = 1;
+        for (var i = 1; i <= number ; i++) {
+            n *= i;
+        }
+        return n;
+    }
+    let number = +prompt("Nhap so vao:");
+    document.write(number + "! = " + factorial(number) );
+
+
+</script>
+</html>
