@@ -2,9 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title> Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không </title>
 </head>
 <body>
 
 </body>
+<script>
+  function findCharInArray(arr , char) {
+      count = 0;
+      if (arr.indexOf(char) !== -1)
+      {
+          for (let i = 0; i < arr.length; i++)
+          {
+              if (arr[i] === char) {
+                   count++;
+              }
+          }
+      }
+      else
+      {
+         return  -1;
+      }
+
+      return "So lan xuat hien: " + count;
+
+
+  }
+  let arr = [];
+  let array = +prompt("Nhap so luong mang:");
+
+  for (var i = 0; i < array ; i++) {
+      arr[i] = prompt("Nhap tung phan tu trong mang");
+  }
+
+  let char = prompt("Nhap ki tu");
+
+  document.write(findCharInArray(arr , char));
+</script>
 </html>
